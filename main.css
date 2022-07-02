@@ -9,7 +9,6 @@ ul {
 }
 li {
 	text-decoration:none;
-	margin-right: 25px;
 }
 h2 {
     width: -webkit-fill-available;
@@ -23,7 +22,9 @@ a {
 }
 .menu-item {
 	line-height: 40px;
+	margin-right:25px;
 }
+
 .block-logo {
 	width: -webkit-fill-available;
 }
@@ -309,10 +310,20 @@ a {
     margin-bottom: 5px;
 	color:white;
 }
-@media (min-width: 641px)
 .roadmap .point .point-text {
     flex: 1 0 50%;
     width: 50%;
+}
+.roadmap-text-container {
+	display: inline-flex;
+	width: -webkit-fill-available;
+    padding: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.roadmap-text {
+	font-size: 12px;
+    flex: 0 0 50%;
 }
 .roadmap .point .point-text {
     flex: 1 0 100%;
@@ -329,7 +340,9 @@ a {
 }
 .roadmap .point:nth-child(even) {
     align-items: flex-end;
+	padding: 0 25px 5px 10px;
 }
+.roadmap .point:nth-child(odd) {padding:0 0 5px 25px;}
 .roadmap .point:not(:last-child) {
     border-bottom: 2px solid gold;
 }
@@ -438,7 +451,6 @@ button.primary.ghost {
     z-index: unset;
 	flex-direction:column;
 }
-.roadmap .point {padding: 10px 30px;}
 .roadmap .point .point-label {
     width: -webkit-fill-available;
 }
