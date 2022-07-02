@@ -30,6 +30,7 @@ a {
     flex: auto;
     align-self: center;
     text-align: right;
+    margin-right: 10px;
 }
 
 .block-logo {
