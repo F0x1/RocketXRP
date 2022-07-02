@@ -23,6 +23,13 @@ a {
 .menu-item {
 	line-height: 40px;
 	margin-right:25px;
+	align-self: center;
+}
+
+.whitepaper-link {
+    flex: auto;
+    align-self: center;
+    text-align: right;
 }
 
 .block-logo {
@@ -51,7 +58,6 @@ a {
 .nav-container, .uael-nav-menu  {
 	display: inline-flex;
 	width: -webkit-fill-available;
-	padding: 5px;
 	height:48px;
 }
 .contract-container {
