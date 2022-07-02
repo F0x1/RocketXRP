@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <title>RocketXRP</title>
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='64x64_rocketxrp_icon.ico') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://widgets.rubic.exchange/iframe/bundle.min.js"></script>
+  <body>
+    <div class="nav-container">
+      <div class="logo column">
+        <div class="widget-wrap">
+          <div class="widget-img">
+            <div class="widget-container">
+              <img width="150" height="48" src="{{ url_for('static', filename='RocketXrp2.png') }}" class="attachment-large size-large">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="populated-widget-wrap">
+          <div class="uael-nav-menu-layout">
+            <div class="uael-nav-menu__toggle">
+              <div class="uael-nav-menu-icon">
+                <i aria-hidden="true" class="fas fa-align-justify"></i>
+              </div>
+            </div>
+            <nav class="uael-dropdown">
+			  <label class="menu-icon" for="menu-btn"><span class="navicon">☰</span></label>
+              <ul id="menu-1-3c2b263" class="uael-nav-menu">
+                <li id="menu-item-1" class="menu-item">
+                  <a href="#home" class="uael-menu-item">Home</a>
+                </li>
+                <li id="menu-item-3" class="menu-item">
+                  <a href="#tokenomics" class="uael-menu-item">Tokenomics</a>
+                </li>
+                <li id="menu-item-4" class="menu-item">
+                  <a href="#roadmap" class="uael-menu-item">Roadmap</a>
+                </li>
+                <li id="menu-item-2" class="menu-item">
+                  <a href="#socials" class="uael-menu-item">Socials</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+	<div id="rubic-widget-root"></div>
+    <div class="token_logo_holder icon_content_logo_holder">
+      <h2 id="tokenomics">Tokenomics</h2>
+      <div class="contract-container">
+        <p class="contract-text">Contract Address: <a href="https://poocoin.app/tokens/0xec5473af618d475e130dcb47cc991d43677a54cd">0xec5473af618d475e130dcb47cc991d43677a54cd</a>
+        </p>
+      </div>
+	  <div class="token-blocks">
+      <div class="each_token_block">
+        <div class="logo_block">
+          <img src="https://assets.website-files.com/6170a5fc21aede0d60d88b70/624d4054b2ee8cc0bdd2a17a_TradeIcon.svg" alt="logo" class="block-logo">
+        </div>
+        <div class="logo_content">
+          <h3 class="heading">MultiChain Bridge</h3>
+          <p class="content">Allows users from 13 different blockchains to buy RocketXRP (RXO) directly using our multichain bridge. Investors can purchase with Ethereum, Matic, Polygon, Solana, Moonriver ect...</p>
+        </div>
+      </div>
+      <div class="each_token_block" id="middle-token-block">
+        <div class="logo_block">
+          <img src="data:image/png;base64,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" class="block-logo" alt="logo">
+        </div>
+        <div class="logo_content">
+          <h3 class="heading">5% XRP Rewards!</h3>
+          <p class="content">Our holders will be rewarded 5%, in the form of XRP! The rewards will be send proportionally to the amount of tokens owned. The more you hold, the bigger rewards you get!</p>
+        </div>
+      </div>
+      <div class="each_token_block">
+        <div class="logo_block">
+          <img src="https://lpkdefi.com/images/earn.png" class="block-logo" alt="logo">
+        </div>
+        <div class="logo_content">
+          <h3 class="heading">Liquidity and Marketing</h3>
+          <p class="content">6% Marketing,2% Liquidity and 1,000,000,000 total supply </p>
+        </div>
+      </div>
+    </div>
+	</div>
+    <div class="roadmap">
+      <h2 id="roadmap">Road Map</h2>
+      <div class="point">
+        <div class="point-index">1</div>
+        <div class="point-label">Summer 2022</div>
+        <div class="point-text">
+		<ul>
+			<li>Create Telegram</li>
+			<li>Contract Development</li>
+			<li>Launch on PancakeSwap</li>
+			<li>Design Whitepaper</li>
+			<li>Website</li>
+			<li>Socials</li>
+			<li>Marketing</li>
+		</ul></div>
+      </div>
+      <div class="point">
+        <div class="point-index">2</div>
+        <div class="point-label">Fall 2022</div>
+        <div class="point-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+      <div class="point">
+        <div class="point-index">3</div>
+        <div class="point-label">Winter 2022</div>
+        <div class="point-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+      <div class="point">
+        <div class="point-index">4</div>
+        <div class="point-label">Spring 2023</div>
+        <div class="point-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+      <div class="point">
+        <div class="point-index">5</div>
+        <div class="point-label">Summer 2023</div>
+        <div class="point-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+      <div class="point">
+        <div class="point-index">6</div>
+        <div class="point-label">Beyond???</div>
+        <div class="point-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+      </div>
+    </div>
+	<h2>Contact the Developer</h2>
+	<div class="card-container">
+		<h1>Vitalik</h1>
+	<img class="round" src="{{ url_for('static', filename='Vitalik.jpg') }}" width="185" alt="Vitalic" />
+	<div class="card-details">
+  <a href="https://t.me/VITALIK_CALLS_GEMFINDER" target="_blank" rel="noreferrer">
+	<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="zoom css-1szphk2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+	  <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+	</svg>
+  </a>
+	<a href="" target="_blank" rel="noreferrer">
+	<img src="https://icons.iconarchive.com/icons/graphicloads/100-flat/256/email-2-icon.png" class="zoom css-1szphk2" alt="Email">
+	</a>
+	</div>
+</div>
+    <footer>
+      <div class="css-ajzub1">
+        <ul class="css-zy433x" id="socials">
+          <a href="https://twitter.com/RocketXrp_Token" target="_blank" rel="noreferrer">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="zoom css-1szphk2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+            </svg>
+          </a>
+          <a href="https://t.me/RocketXrpOfficial" target="_blank" rel="noreferrer">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" focusable="false" class="zoom css-1szphk2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"></path>
+            </svg>
+          </a>
+          <a href="https://medium.com/@rocketxrpofficial" target="_blank" rel="noreferrer">
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" focusable="false" class="zoom css-1szphk2" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+              <path d="M71.5 142.3c.6-5.9-1.7-11.8-6.1-15.8L20.3 72.1V64h140.2l108.4 237.7L364.2 64h133.7v8.1l-38.6 37c-3.3 2.5-5 6.7-4.3 10.8v272c-.7 4.1 1 8.3 4.3 10.8l37.7 37v8.1H307.3v-8.1l39.1-37.9c3.8-3.8 3.8-5 3.8-10.8V171.2L241.5 447.1h-14.7L100.4 171.2v184.9c-1.1 7.8 1.5 15.6 7 21.2l50.8 61.6v8.1h-144v-8L65 377.3c5.4-5.6 7.9-13.5 6.5-21.2V142.3z"></path>
+            </svg>
+          </a>
+		  <a href="https://bscscan.com/address/0xec5473af618d475e130dcb47cc991d43677a54cd" target="_blank" rel="noreferrer">
+			<img src="https://bscscan.com/images/brandassets/BscScan-logo-light-circle.png" class="zoom css-1szphk2"></img>
+		  </a>
+        </ul>
+      </div>
+      <div class="css-1qg04nv">
+        <p class="footer-text css-109t4jf">© RocketXRP 2022. All rights reserved.</p>
+      </div>
+    </footer>
+	<script src="{{ url_for('static', filename='main.js') }}"></script>
+<script defer type="text/javascript">
+    // describe widget configuration and saving to a global variable for future use
+    var configuration = {
+        from: 'ETH',
+        to: '0xec5473af618d475e130dcb47cc991d43677a54cd',
+        fromChain: 'ETH',
+        toChain: 'BSC',
+        amount: 1,
+        iframe: 'flex',
+        hideSelectionFrom: false,
+        hideSelectionTo: false,
+        theme: 'dark',
+        background: '#28372e',
+        injectTokens: {
+            'bsc': [
+                '0xec5473af618d475e130dcb47cc991d43677a54cd'
+            ]
+        },
+        slippagePercent: {
+            instantTrades: 20,
+            crossChain: 20
+        }
+    }
+
+    // prevent accidental changes to the object, for example, when re-creating a widget for another theme
+    Object.freeze(configuration);
+
+    // create widget
+    rubicWidget.init(configuration);
+</script>
+  </body>
+</html>
